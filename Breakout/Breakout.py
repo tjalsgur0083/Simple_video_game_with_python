@@ -17,7 +17,7 @@ bricks = [pygame.Rect(50 + 100 * i, 50 + 20 * j, 80, 10) for i in range(7) for j
 def draw_text(text, size, x, y):
     font = pygame.font.Font(None, size)
     text_surface = font.render(text, True, (255, 255, 255))
-    text_rect = text_surface.get_rext()
+    text_rect = text_surface.get_rect()
     text_rect.midtop = (x, y)
     screen.bilt(text_surface, text_rect)
 
